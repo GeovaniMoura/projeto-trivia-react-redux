@@ -10,7 +10,7 @@ const BUTTON_NEXT_QUESTION_SELECTOR = '[data-testid="btn-next"]';
 const FEEDBACK_TEXT_SELECTOR = '[data-testid="feedback-text"]';
 const BUTTON_SETTINGS_SELECTOR = '[data-testid="btn-settings"]';
 
-const name = 'Nome da pessoa';
+const testName = 'Nome da pessoa';
 const email = 'email@pessoa.com';
 
 const BUTTON_RANKING_SELECTOR = '[data-testid="btn-ranking"]';
@@ -32,7 +32,7 @@ describe('Testes requisitos bônus', () => {
     cy.get('[data-testid="select-difficulty-config"]').select('Easy');
     cy.get('[data-testid="select-type-config"]').select('Multiple choice');
     cy.get('[data-testid="button-edit-config"]').click();
-    cy.get(INPUT_PLAYER_NAME_SELECTOR).type(name);
+    cy.get(INPUT_PLAYER_NAME_SELECTOR).type(testName);
     cy.get(INPUT_PLAYER_EMAIL_SELECTOR).type(email);
     cy.get(BUTTON_PLAY_SELECTOR).click();
     cy.wait(3000);
@@ -91,7 +91,7 @@ describe('Testes requisitos bônus', () => {
     cy.get('[data-testid="select-type-config"]').select('True / False');
     cy.get('[data-testid="button-edit-config"]').click();
 
-    cy.get(INPUT_PLAYER_NAME_SELECTOR).type(name);
+    cy.get(INPUT_PLAYER_NAME_SELECTOR).type(testName);
     cy.get(INPUT_PLAYER_EMAIL_SELECTOR).type(email);
     cy.get(BUTTON_PLAY_SELECTOR).click();
     cy.wait(3000);
@@ -149,7 +149,7 @@ describe('Testes requisitos bônus', () => {
     cy.get('[data-testid="select-type-config"]').select('Multiple choice');
     cy.get('[data-testid="button-edit-config"]').click();
 
-    cy.get(INPUT_PLAYER_NAME_SELECTOR).type(name);
+    cy.get(INPUT_PLAYER_NAME_SELECTOR).type(testName);
     cy.get(INPUT_PLAYER_EMAIL_SELECTOR).type(email);
     cy.get(BUTTON_PLAY_SELECTOR).click();
     cy.wait(3000);

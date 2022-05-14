@@ -86,7 +86,7 @@ Se desejar mais informações sobre a API, acesse sua [documentação](https://g
 
 ### Tela de início/login
 
-<img src="./images/telaDeLogin.png" alt="Tela de Login"/>
+<img src="./images/TelaDeLogin.png" alt="Tela de Login"/>
 
 ### Tela de jogo
 
